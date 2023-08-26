@@ -1,16 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Home />
+  <h1>{{ title }}</h1>
+  <Child v-on:changeTitle="updateTitleText($event)" data1="hello kirti" />
+  <LoginForm />
+  </div>
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <!-- <HelloWorld msg="Welcome to Your  App"/> -->
+  <!-- <Navbar /> -->
+  
+  
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import Home from './components/Home.vue'
+import Navbar from './components/Navbar.vue'
+import Child from './components/child.vue'
+import LoginForm from './components/LoginForm.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Home,
+    Navbar,
+    Child,
+    LoginForm
+  },
+  data(){
+    return{
+      title:"Child to parent data"
+    }
+  },
+  methods:{
+    updateTitleText(title){
+    this.title = title
   }
+  }
+  
+
 }
 </script>
 
