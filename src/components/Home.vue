@@ -1,8 +1,15 @@
 <template>
 <div class="home">
     <h1> this is home component</h1>
-    <Users />
-    <Products />
+    <div style="width: 50%;height: 70%;padding: 10px; background-color: bisque;float:left; color: rebeccapurple;">
+        <Users />
+        <Products />
+    </div>
+    <div style="width: 50%;height: 70% ;padding: 10px;background-color: bisque;float:left; color: rebeccapurple;">
+        <router-link to="/LoginForm">Login Here</router-link><br/><br/>
+        <router-view></router-view>
+    </div>
+   
 </div>
 
 </template>
