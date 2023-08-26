@@ -3,12 +3,11 @@
     <Home />
   <h1>{{ title }}</h1>
   <Child v-on:changeTitle="updateTitleText($event)" data1="hello kirti" />
-  <LoginForm />
+  <!-- <LoginForm /> -->
   </div>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld msg="Welcome to Your  App"/> -->
   <!-- <Navbar /> -->
-  
   
 </template>
 
