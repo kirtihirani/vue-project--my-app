@@ -15,7 +15,6 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Home from './components/Home.vue'
-import Navbar from './components/Navbar.vue'
 import Child from './components/child.vue'
 import LoginForm from './components/LoginForm.vue'
 export default {
@@ -23,7 +22,6 @@ export default {
   components: {
     HelloWorld,
     Home,
-    Navbar,
     Child,
     LoginForm
   },
